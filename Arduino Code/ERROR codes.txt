@@ -1,0 +1,23 @@
+Device Error codes: first 8 bits reserved for hardware faults, second 8 bits reserved for operation faults/errors
+
+
+ER 0x0000: No Error detected
+
+ER0 0x8000	16 flash: SD card initialisation Failure; Could not start SD card at PowerUp.
+ER0 0x4000	15 flash: SD card initialisation Failure; Could not start SD card at wakeUP.
+ER0 0x2000	14 flash: RTC alarm is not being reset/responding
+ER0 0x1000	13 flash: Si7051 temp sensor I2C connection not initialising.
+ER0 0x0800	12 flash: ADS1115 ADC I2C connection not initialising.
+ER0 0x0400	11 flash: CO2 I2C connection not initialising.
+ER0 0x0200	10 flash: Power not Stabilizing for Sensors.
+ER0 0x0100	 9 flash: Power not Stabilizing for SD Card.
+
+
+ER1 0x0080	 8 flash: Data file to store Samples in not found on SDcard.
+ER1 0x0040	 7 flash: Lookup table file not found.
+ER1 0x0020	 6 flash: Lookup table File not found during saving to SD card.
+ER1 0x0010	 5 flash: Sample Data file could not be opened/created on SD card.
+ER1 0x0008	 4 flash: Sample data file could not be opened/created on startup.
+ER1 0x0004	 3 flash: SD card not found/Detected
+ER1 0x0002	 2 flash: Error handling Serial communication
+ER1 0x0001	 1 flash: 
